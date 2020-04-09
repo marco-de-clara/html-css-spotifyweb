@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+body {
+    height: 100vh;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(50,75,80,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 200px;
+    height: 100%;
+}
+
+.container {
+    width: 1170px;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.container-aside {
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.top-aside {
+    height: 87%;
+}
+
+.container::after,
+.container-aside::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+.dark-bg {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: rgba(255, 255, 255, 0.4);
+}
+
+#logo {
+    width: 150px;
+    margin: 22.5px;
+}
+
+aside ul {
+    list-style: none;
+    margin-bottom: 22.5px;
+}
+
+.main-list-aside-st {
+    font-size: 0.675rem;
+}
+
+.hover {
+    cursor: pointer;
+}
+
+.hover:hover {
+    color: #fff;
+    border-left: 2px solid #1DB954;
+}
+
+.text-aside-dark {
+    padding-left: 22.5px;
+    font-size: 0.675rem;
+    line-height: 1.4rem;
+}
+
+.truncate {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 60%;
+}
+
+.bot-aside {
+    width: 85%;
+    padding-left: 22.5px;
+}
+
+.bot-aside span,
+.fa-arrow-circle-down {
+    font-size: 0.7rem;
+}
+
+.hover-bot {
+    cursor: pointer;
+}
+
+.hover-bot:hover {
+    color: #fff;
+}
+
+.fa-user {
+    font-size: 1.5rem;
+}
+
+#login {
+    margin-top: 22.5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+#user {
+    font-size: 0.85rem;
+    font-weight: bold;
+}
