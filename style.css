@@ -13,12 +13,11 @@ body {
     background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(50,75,80,1) 35%, rgba(0,212,255,1) 100%);
 }
 
-aside {
+.aside-stats {
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
-    width: 200px;
     height: 100%;
 }
 
@@ -80,7 +79,7 @@ aside ul {
 .text-aside-dark {
     padding-left: 22.5px;
     font-size: 0.675rem;
-    line-height: 1.4rem;
+    line-height: 1.8rem;
 }
 
 .truncate {
@@ -112,7 +111,7 @@ aside ul {
     font-size: 1.5rem;
 }
 
-#login {
+.login {
     margin-top: 22.5px;
     color: #fff;
     cursor: pointer;
@@ -121,4 +120,53 @@ aside ul {
 #user {
     font-size: 0.85rem;
     font-weight: bold;
+}
+
+#icon {
+    width: 45px;
+    margin: 22.5px;
+}
+
+/* Standard */
+@media (max-width: 767px) {
+    .hidden-xs {
+        display: none;
+    }
+
+    .width-xs {
+        width: 90px;
+    }
+}
+
+/* From 768px */
+@media (min-width: 768px) and (max-width: 991px) {
+    .hidden-sm {
+        display: none;
+    }
+
+    .width-sm {
+        width: 200px;
+    }
+}
+
+/* From 992px */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .hidden-md {
+        display: none;
+    }
+
+    .width-sm {
+        width: 200px;
+    }
+}
+
+/* From 1200px */
+@media (min-width: 1200px) {
+    .hidden-lg {
+        display: none;
+    }
+
+    .width-sm {
+        width: 200px;
+    }
 }

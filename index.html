@@ -5,15 +5,32 @@
         <title>Spotify - Home</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" href="img/spotify-icon.png">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://kit.fontawesome.com/3d747d6b6d.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <aside class="dark-bg">
+        <aside class="dark-bg aside-stats width-xs width-sm">
             <div class="container-aside">
-                <div class="top-aside">
+                <!-- top sidebar from 767px and down -->
+                 <div class="top-aside hidden-sm hidden-md hidden-lg">
+                    <ul>
+                        <li>
+                            <img id="icon" src="img/spotify-icon-white.png" alt="spotify-icon">
+                        <li>
+                        <li class="text-aside-dark hover">
+                            <div class="fas fa-search"></div>
+                        </li>
+                        <li class="text-aside-dark hover">
+                            <div class="fas fa-home"></div>
+                        </li>
+                        <li class="text-aside-dark hover">
+                            <div class="fas fa-folder-open"></div>
+                        </li>
+                    </ul>
+                </div>
+                 <!-- top sidebar from 768px and up -->
+                <div class="top-aside hidden-xs">
                     <ul>
                         <li>
                             <img id="logo" src="img/spotify-logo-white.png" alt="spotify-logo">
@@ -42,13 +59,24 @@
                         <li class="text-aside-dark hover truncate">Lofi Hip Hop & Chill Beats</li>
                     </ul>
                 </div>
-                <div class="bot-aside">
+                <!-- bottom sidebar from 767px and down -->
+                <div class="bot-aside hidden-sm hidden-md hidden-lg">
+                    <div class="hover-bot">
+                        <div class="fas fa-arrow-circle-down"></div>
+                    </div>
+                    <hr>
+                    <div class="login">
+                        <div class="fas fa-user"></div>
+                    </div>
+                </div>
+                <!-- bottom sidebar from 768px and up -->
+                <div class="bot-aside hidden-xs">
                     <div class="hover-bot">
                         <div class="fas fa-arrow-circle-down"></div>
                         <span>Install App</span>
                     </div>
                     <hr>
-                    <div id="login">
+                    <div class="login">
                         <div class="fas fa-user"></div>
                         <span id="user">John Doe</span>
                     </div>
