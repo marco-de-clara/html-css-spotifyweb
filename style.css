@@ -8,9 +8,9 @@
 }
 
 body {
-    height: 100vh;
+    height: 2000px;
     background: rgb(2,0,36);
-    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(50,75,80,1) 35%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(315deg, rgba(2,0,36,1) 0%, rgba(50,75,80,1) 40%, rgba(0,212,255,1) 100%);
 }
 
 .aside-stats {
@@ -255,10 +255,27 @@ aside ul {
 	opacity: 1;
 }
 
-.test {
-    width: 16%;
-    height: 100%;
-    background-color: #ccc;
+.right-player {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.right-player .fas {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.4);
+    margin: 0 8px;
+    cursor: pointer;
+}
+
+.right-player .fas:hover {
+    color: #fff;
+}
+
+.volume {
+    width: 85px;
+    margin-right: 22.5px;
 }
 
 /* Standard */
