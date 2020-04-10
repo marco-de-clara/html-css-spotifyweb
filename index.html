@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <aside class="dark-bg aside-stats width-xs width-sm">
+        <aside class="dark-bg aside-stats width-xs-aside width-sm-aside">
             <div class="container-aside">
                 <!-- top sidebar from 767px and down -->
                  <div class="top-aside hidden-sm hidden-md hidden-lg">
@@ -83,23 +83,23 @@
                 </div>
             </div>
         </aside>
-        <div class="player-bar">
-            <div class="container-player">
-                <div class="left-player">
+        <div id="player-bar">
+            <div id="container-player">
+                <div id="left-player">
                     <img src="img/sofad.png" alt="album-cover">
                     <div>
-                        <a class="song" href="#">I Feel You</a>
-                        <p class="band">Depeche Mode</p>
+                        <a class="song hidden-xs hidden-sm" href="#">I Feel You</a>
+                        <p class="band hidden-xs hidden-sm">Depeche Mode</p>
                     </div>
                     <div class="far fa-heart"></div>
                 </div>
-                <div class="center-player">
+                <div id="center-player" class="width-xs-slider width-md-slider">
                     <div class="btn-container">
                         <div class="fas fa-random btn-style"></div>
                         <div class="fas fa-step-backward btn-style"></div>
                         <div class="far fa-play-circle btn-style"></div>
                         <div class="fas fa-step-forward btn-style"></div>
-                        <div class="fas fa-sync btn-style"></div>
+                        <div class="fas fa-sync btn-style hidden-xs"></div>
                     </div>
                     <div class="slider-container">
                         <span class="timestamp">2:20</span>
@@ -107,7 +107,7 @@
                         <span class="timestamp">4:40</span>
                     </div>
                 </div>
-                <div class="right-player">
+                <div id="right-player" class="hidden-xs">
                     <div class="fas fa-bars"></div>
                     <div class="fas fa-desktop"></div>
                     <div class="fas fa-volume-up"></div>
