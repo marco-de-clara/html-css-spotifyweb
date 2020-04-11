@@ -2,13 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
     font-size: 20px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
 }
 
 body {
-    height: 2000px;
     background: rgb(2,0,36);
     background: linear-gradient(315deg, rgba(2,0,36,1) 0%, rgba(50,75,80,1) 40%, rgba(0,212,255,1) 100%);
 }
@@ -19,14 +21,6 @@ body {
     left: 0;
     bottom: 0;
     height: calc(100% - 80px);
-}
-
-.container {
-    width: 1170px;
-	padding-right: 15px;
-	padding-left: 15px;
-	margin-right: auto;
-	margin-left: auto;
 }
 
 .container-aside {
@@ -279,6 +273,49 @@ aside ul {
     margin-right: 22.5px;
 }
 
+main {
+    height: 1000px;
+    margin-bottom: 80px;
+}
+
+.menu-layout {
+    display: inline-block;
+    list-style: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.7rem;
+    margin: 35px 20px 25px;
+    cursor: pointer;
+}
+
+.menu-layout:hover {
+    color: #fff;
+}
+
+.menu-layout:hover::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 30px;
+    padding-top: 5px;
+    border-bottom: 2px solid #1db954;
+}
+
+.container-main {
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .fa-bars {
+    align-self: flex-start;
+    color: #fff;
+    font-size: 1.75rem;
+    margin: 22.5px;
+    cursor: pointer;
+}
+
 /* Standard */
 @media (max-width: 767px) {
     .hidden-xs {
@@ -292,6 +329,10 @@ aside ul {
     .width-xs-slider {
         width: 70%;
     }
+
+    .margin-xs-main {
+        margin-left: 90px;
+    }
 }
 
 /* From 768px */
@@ -302,6 +343,10 @@ aside ul {
 
     .width-sm-aside {
         width: 200px;
+    }
+
+    .margin-sm-main {
+        margin-left: 200px;
     }
 }
 
@@ -318,6 +363,10 @@ aside ul {
     .width-md-slider {
         width: 37%;
     }
+
+    .margin-sm-main {
+        margin-left: 200px;
+    }
 }
 
 /* From 1200px */
@@ -332,5 +381,9 @@ aside ul {
 
     .width-md-slider {
         width: 37%;
+    }
+
+    .margin-sm-main {
+        margin-left: 200px;
     }
 }
