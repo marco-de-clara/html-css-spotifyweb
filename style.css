@@ -230,19 +230,10 @@ aside ul {
     outline: none;
 }
 
+/* Chrome thumb */
+
 .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
-    appearance: none;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: #fff;
-    border-color: #fff;
-    cursor: pointer;
-    opacity: 0;
-}
-
-.slider::-moz-range-thumb {
     width: 12px;
     height: 12px;
     border-radius: 50%;
@@ -254,13 +245,39 @@ aside ul {
 
 .slider:hover::-webkit-slider-thumb {
     -webkit-appearance: none;
-    appearance: none;
     opacity: 1;
+}
+
+/* /Chrome */
+
+/* FF thumb and trackprogress */
+
+.slider::-moz-range-thumb {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #fff;
+    border-color: #fff;
+    cursor: pointer;
+    opacity: 0;
 }
 
 .slider:hover::-moz-range-thumb {
 	opacity: 1;
 }
+
+.slider::-moz-range-progress {
+    background-color: #b3b3b3;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.slider:hover::-moz-range-progress {
+    background-color: #1db954;
+    height: 100%;
+}
+
+/* /FF */
 
 .right-player {
     display: flex;
