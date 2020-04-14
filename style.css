@@ -67,7 +67,7 @@ aside ul {
 
 .hover:hover {
     color: #fff;
-    border-left: 2px solid #1DB954;
+    border-left: 3px solid #1DB954;
 }
 
 .text-aside-dark {
@@ -181,7 +181,7 @@ aside ul {
 .fa-heart {
     color: rgba(255, 255, 255, 0.4);
     font-size: 0.7rem;
-    margin: 10px;
+    margin-left: 8px;
     cursor: pointer;
 }
 
@@ -222,6 +222,7 @@ aside ul {
 }
 
 .slider {
+    -webkit-appearance: none;
     width: calc((100% - 70px));
     height: 5px;
     border-radius: 5px;
@@ -232,38 +233,50 @@ aside ul {
 .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-}
-
-.slider::-webkit-slider-thumb,
-.slider::-moz-range-thumb {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background: #fff;
+    background-color: #fff;
+    border-color: #fff;
     cursor: pointer;
     opacity: 0;
 }
 
-.slider:hover::-moz-range-thumb,
+.slider::-moz-range-thumb {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #fff;
+    border-color: #fff;
+    cursor: pointer;
+    opacity: 0;
+}
+
 .slider:hover::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    opacity: 1;
+}
+
+.slider:hover::-moz-range-thumb {
 	opacity: 1;
 }
 
-#right-player {
+.right-player {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     justify-content: flex-end;
 }
 
-#right-player .fas {
+.right-player .fas {
     font-size: 0.9rem;
     color: rgba(255, 255, 255, 0.4);
     margin: 0 8px;
     cursor: pointer;
 }
 
-#right-player .fas:hover {
+.right-player .fas:hover {
     color: #fff;
 }
 
@@ -274,6 +287,10 @@ aside ul {
 
 main {
     margin-bottom: 80px;
+}
+
+main nav {
+    text-align: center;
 }
 
 .menu-layout {
@@ -298,14 +315,6 @@ main {
     right: 25%;
     width: 50%;
     border-bottom: 2px solid #1db954;
-}
-
-.container-main {
-    height: 100%;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: space-between;
 }
 
 main .fa-bars {
@@ -353,19 +362,21 @@ h1, .gallery {
     }
 
     .width-xs-slider {
-        width: 70%;
+        width: 60%;
     }
 
     .margin-xs-main {
         margin-left: 90px;
     }
 
-    .container-xs-gallery {
-        width: 250px;
+    .container-xs-main {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .width-xs-img {
-        width: 110px;
+        width: 90px;
     }
 }
 
@@ -383,8 +394,10 @@ h1, .gallery {
         margin-left: 200px;
     }
 
-    .container-sm-gallery {
+    .container-sm-main {
         width: 500px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .width-sm-img {
@@ -410,8 +423,10 @@ h1, .gallery {
         margin-left: 200px;
     }
 
-    .container-md-gallery {
+    .container-md-main {
         width: 750px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .width-sm-img {
@@ -437,8 +452,10 @@ h1, .gallery {
         margin-left: 200px;
     }
 
-    .container-lg-gallery {
+    .container-lg-main {
         width: 970px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .width-sm-img {
